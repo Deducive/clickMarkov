@@ -1,5 +1,22 @@
 # Markov Attribution from Clickstream Data
 
+###### - markovreport
+
+#' Produce attribution report
+#' @description This is a wrapper to channelAttribution that takes a clickstream dataframe and produces a .
+#' @param data The name of the data frame to use .
+#' @param date_from The first full day to report, in the format "YYYY-MM-DD" .
+#' @param date_to The last full day to report, in the format "YYYY-MM-DD" .
+#' @param look_back The lookback window, in days .
+#' @param channels The name of the variable that contains the cleaned source .
+#' @param goal_number The number of the Google Analytics conversion that is a purchase .
+#' @keywords markov, attribution, clickstream
+#' @export
+#' @examples
+#' markovreport(data, date_from, date_to, look_back, channels, goal_number)
+#' markovreport(mydataframe, "2019-06-01", "2019-06-30", 30, "my_source_variable", 4)
+
+# Set function
 markovreport <- function(data,
                          date_from,
                          date_to,
