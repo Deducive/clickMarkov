@@ -1,6 +1,6 @@
 # Markov Attribution from Clickstream Data
 
-clickMarkov <- function(data,
+markovreport <- function(data,
                          date_from,
                          date_to,
                          look_back,
