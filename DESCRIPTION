@@ -1,0 +1,19 @@
+Package: clickAttribution
+Type: Package
+Title: Creates an attribution report from Google Analytics Clickstream data
+Version: 0.1.0
+Author: Deducive
+Maintainer: Paul Newnes <paulasnewnes@gmail.com>
+Description: There are services extract hit-level data from Google Analytics.
+This package takes a file and applies attrubution analysis using Markov and heuristic methods.
+Imports:
+    tidyverse,
+    lubridate,
+    ChannelAttribution
+Depends:
+    tidyverse,
+    lubridate,
+    ChannelAttribution
+License:
+Encoding: UTF-8
+LazyData: true
