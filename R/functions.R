@@ -3,7 +3,7 @@
 ###### - markovreport
 
 #' Produce attribution report
-#' @description This is a wrapper to channelAttribution that takes a clickstream dataframe and produces a .
+#' @description This is a wrapper to channelAttribution that takes a clickstream dataframe and produces heuristic and non-heuristic atrribution reports .
 #' @param data The name of the data frame to use .
 #' @param date_from The first full day to report, in the format "YYYY-MM-DD" .
 #' @param date_to The last full day to report, in the format "YYYY-MM-DD" .
