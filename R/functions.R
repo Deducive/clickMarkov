@@ -91,7 +91,7 @@ markovreport <- function(data,
     group_by(sl_userId) %>%
     dplyr::summarise(
       revenue      = sum(M_transactionRevenue),
-      path         = paste0(channels, collapse = " > "),
+      path         = paste0(UQ(as.name(channels)), collapse = " > "),
       max_datetime = max(sl_timeStamp)
     ) %>%
     filter(max_datetime   >= date_from)
